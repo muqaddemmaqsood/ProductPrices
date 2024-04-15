@@ -1,0 +1,21 @@
+USE [Product-Price]
+GO
+
+/****** Object:  Table [dbo].[ProductPrice]    Script Date: 4/15/2024 7:26:31 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[ProductPrice](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[ProductId] [int] NULL,
+	[Prices] [decimal](18, 3) NULL,
+ CONSTRAINT [PK_ProductPrice] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
